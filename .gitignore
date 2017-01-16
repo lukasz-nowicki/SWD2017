@@ -2,6 +2,10 @@
 Thumbs.db
 ehthumbs.db
 
+*.java
+target/
+bin/
+
 # Folder config file
 Desktop.ini
 
