@@ -8,5 +8,4 @@ public class ProductA extends Product {
 		weight = 1.0 ;
 		value = 3.0;
 	}
-
 }
