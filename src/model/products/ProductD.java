@@ -6,7 +6,7 @@ public class ProductD extends Product {
 		super();
 		capacity = 2.0;
 		weight =10.0 ;
-		value = 140.0;
+		value = 40.0;
 	}
 
 }

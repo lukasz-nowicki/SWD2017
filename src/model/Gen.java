@@ -24,16 +24,20 @@ public class Gen {
 	}
 	
 	private void randomizeGen(){
-		Random rand = new Random();
+Random rand = new Random();
 		int available_products_quantity = 10;
+		int counter = 0;
 			
-		while (!(getCapacity() == TOTAL_AVAILABLE_CAPACITY));//dopóki magazyn nie jest wype³niony po brzegi
+		while (getCapacity() != TOTAL_AVAILABLE_CAPACITY)//dopóki magazyn nie jest wype³niony po brzegi
 		{
 			int indexOfRandomProduct = rand.nextInt(available_products_quantity);
 			Product randomProduct = avaliable_products.get(indexOfRandomProduct);//wybieramy losowy produkt z kolekcji produktów
 			if (getCapacity() + randomProduct.getCapacity() <= TOTAL_AVAILABLE_CAPACITY) {
 				products.add(randomProduct);//dodajemy go do genu
-			}			
+			}	
+			counter++;
+			
+			if (counter > 100) {break;}
 		}
 	}
 	

@@ -4,9 +4,9 @@ public class ProductE extends Product {
 
 	public ProductE() {
 		super();
-		capacity = 100.0;
+		capacity = 40.0;
 		weight =10.0 ;
-		value = 200.0;
+		value = 20.0;
 	}
 
 }
